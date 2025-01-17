@@ -1,4 +1,4 @@
-import bcrypt from 'bcrypt' 
+import bcryptjs from 'bcryptjs' 
 import validator from 'validator'
 import jwt from 'jsonwebtoken'
 import Customer from '../models/customers.js'
@@ -226,8 +226,8 @@ const resetPassword = async (req, res) => {
       }
 
       // HASHING USER PASSWORD
-      const salt = await bcrypt.genSalt(10);
-      const hashedPassword = await bcrypt.hash(newPassword, salt);
+      const salt = await bcryptjs.genSalt(10);
+      const hashedPassword = await bcryptjs.hash(newPassword, salt);
 
       await user.update({ password: hashedPassword, verification_code: null, verification_code_expires_at: null,}); 
   
@@ -248,7 +248,7 @@ const loginUser = async (req, res) => {
         if (!user) {
             return res.json({success: false, message:"This user does not exist."});
         }
-        const isMatch = await bcrypt.compare(password, user.password);
+        const isMatch = await bcryptjs.compare(password, user.password);
         if (isMatch) {
             const token = createToken(user.customer_id);
             return res.json({success: true, message: "Login Succesfully", token});
@@ -478,8 +478,8 @@ const verifyAndCreateUser = async (req, res) => {
         }
 
         // Hash the password
-        const salt = await bcrypt.genSalt(10);
-        const hashedPassword = await bcrypt.hash(userData.password, salt);
+        const salt = await bcryptjs.genSalt(10);
+        const hashedPassword = await bcryptjs.hash(userData.password, salt);
 
         // Save user in the database
         const newUser = await Customer.create({
