@@ -1,12 +1,10 @@
 import express from 'express';
 import cors from 'cors';
 import 'dotenv/config';
-import {sequelize, connectToDatabase} from './config/sequelize.js'
+import {connectToDatabase} from './config/sequelize.js'
 import connectCloudinary from './config/cloudinary.js';
 import userRouter from './routes/userRoute.js';
 import productRouter from './routes/productRoute.js';
-
-import Product from './models/product.js';
 import cartRouter from './routes/cartRoute.js';
 import wishlistRouter from './routes/wishlistRoute.js';
 import orderRouter from './routes/orderRoute.js';
