@@ -30,10 +30,6 @@ app.use('/api/wishlist', wishlistRouter);
 app.use('/api/order', orderRouter)
 app.use('/api/list-user', userListRouter)
 
-app.get('/',(req, res) => {
-    res.send("API Working")
-})
-
 const startServer = async () => {
     try {
         await connectToDatabase();
