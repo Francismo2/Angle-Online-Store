@@ -1,0 +1,218 @@
+.dash-container {
+    background-color: #FFF2F3;
+    min-height: 100vh;
+    padding: 1rem 3rem;
+    width: 100%;
+}
+
+.dash-container .dash-contents {
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.OAL-container {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.una, .pangalawa {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.redirect-con {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: start;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: white;
+    min-width: 100%;
+    height: 10vh;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.286);
+}
+
+.circle-con {
+    background-color: #470507;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+.logout-but {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #470507;
+    color: white;
+    border-radius: 0.3rem;
+    min-width: 100%;
+    height: 7vh;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.286);
+}
+
+.log-con {
+    font-size: 2rem;
+    stroke-width: 0.5;
+}
+
+
+/* MEDIA QUERIES */
+/* || SMALL */
+@media screen and (min-width: 576px) {
+    .una, .pangalawa {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .dash-container .dash-contents {
+        gap: 2rem;
+    }
+    
+    .OAL-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .redirect-con {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: start;
+        align-items: center;
+        min-width: 100%;
+        height: 10vh;
+        padding: 1.5rem;
+    }
+    
+    .circle-con {
+        font-size: 1rem;
+        height: 40px;
+        width: 40px;
+    }
+    
+    .logout-but {
+        gap: 1rem;
+        border-radius: 0.3rem;
+        min-width: 100%;
+        height: 7vh;
+    }
+    
+    .log-con {
+        font-size: 1rem;
+        stroke-width: 0.5;
+    }
+}
+
+/* || MEDIUM */
+@media screen and (min-width: 768px) {
+    .una, .pangalawa {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .redirect-con {
+        gap: 1rem;
+        min-width: 100%;
+        height: 15vh;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.286);
+        border-radius: 0.7rem;
+    }
+
+    .circle-con {
+        background-color: #470507;
+        color: white;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        
+    }
+    .logout-but {
+        min-width: 100%;
+        height: 10vh;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.286);
+    }
+    .button-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* || XL */
+@media screen and (min-width: 1300px) {
+    .dash-container .dash-contents {
+        padding-inline: 5rem;
+        gap: 6rem;
+    }
+    .una, .pangalawa {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .OAL-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+        align-items: center;
+        
+    }
+    .redirect-con {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        min-width: 30%;
+        height: 20vh;
+        padding: 2rem;
+        gap: 2rem;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.286);
+        border-radius: 1rem;
+    }
+
+    .circle-con {
+        font-size: 1.8rem;
+        height: 70px;
+        width: 70px;
+    }
+    .logout-but {
+        min-width: 100%;
+        height: 13vh;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.286);
+    }
+    .button-text {
+        font-size: 1.4rem;
+    }
+    .log-con {
+        font-size: 1.5rem;
+        stroke-width: 0.5;
+    }
+}

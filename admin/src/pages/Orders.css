@@ -1,0 +1,59 @@
+.empty-orders-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    color: #8b8b8b;
+    min-height: 50vh;
+}
+
+.order-container {
+    margin: 1rem 3rem;
+}
+
+.order-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.two-row-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.child-container {
+    border: 2px solid #333;
+    border-radius: 1rem;
+    background-color: white;
+    position: relative;
+}
+
+.client-name, .client-items {
+    font-weight: bold;
+}
+
+.price {
+    font-size: 16px;
+}
+
+.drop-down-status {
+    border: 2px solid ;
+    cursor: pointer;
+}
+
+.cls-order {
+    border-radius: 0.4rem;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.611);
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #470507;
+    color: white;
+}
