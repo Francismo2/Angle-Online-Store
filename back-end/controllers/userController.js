@@ -1,4 +1,4 @@
-import bcrypt from 'bcrypt' 
+import bcryptjs from 'bcryptjs' 
 import validator from 'validator'
 import jwt from 'jsonwebtoken'
 import Customer from '../models/customers.js'
